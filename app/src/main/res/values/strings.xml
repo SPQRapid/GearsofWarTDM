@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Gears of War TDM</string>
+    <string name="add_175_points">+ 175 points\n 1 kill</string>
+    <string name="add_50_points">+ 50 points\n DBNO</string>
+    <string name="add_30_points">+ 30 points\n assist</string>
+    <string name="minus_100_points">- 100 points\n suicide</string>
+    <string name="add_175_pointsLocust">+ 175 points\n 1 kill</string>
+    <string name="add_50_pointsLocust">+ 50 points\n dbno</string>
+    <string name="add_30_pointsLocust">+ 30 points\n assist</string>
+    <string name="minus_100_pointsLocust">- 100 points\n suicide</string>
+    <string name="restart">restart game</string>
+</resources>

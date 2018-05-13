@@ -1,0 +1,188 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="1000dp"
+        android:background="#EEEEEE"
+        android:scaleType="fitStart"
+        android:src="@drawable/coalitionoforderedgovernments" />
+
+    <Button
+        android:id="@+id/cog_first_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="185dp"
+        android:onClick="cogKill"
+        android:text="@string/add_175_points"
+        android:textColor="#2196F3" />
+
+    <Button
+        android:id="@+id/cog_second_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cog_first_button"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:onClick="cogDown"
+        android:text="@string/add_50_points"
+        android:textColor="#2196F3" />
+
+    <Button
+        android:id="@+id/cog_third_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cog_second_button"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:onClick="cogAssist"
+        android:text="@string/add_30_points"
+        android:textColor="#2196F3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cog_third_button"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:onClick="cogSuicide"
+        android:text="@string/minus_100_points"
+        android:textColor="#2196F3" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="1000dp"
+        android:layout_alignParentRight="true"
+        android:background="#000000"
+        android:scaleType="fitStart"
+        android:src="@drawable/locust" />
+
+    <Button
+        android:id="@+id/locust_first_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="185dp"
+        android:onClick="locustKill"
+        android:text="@string/add_175_pointsLocust"
+        android:textColor="#D50000" />
+
+    <Button
+        android:id="@+id/locust_second_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locust_first_button"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="10dp"
+        android:onClick="locustDown"
+        android:text="@string/add_50_pointsLocust"
+        android:textColor="#D50000" />
+
+    <Button
+        android:id="@+id/locust_third_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locust_second_button"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="10dp"
+        android:onClick="locustAssist"
+        android:text="@string/add_30_pointsLocust"
+        android:textColor="#D50000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locust_third_button"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="10dp"
+        android:onClick="locustSuicide"
+        android:text="@string/minus_100_pointsLocust"
+        android:textColor="#D50000" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="rematch"
+        android:text="@string/restart" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/good_guys"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EEEEEE"
+                android:gravity="center"
+                android:text="cog"
+                android:textAllCaps="true"
+                android:textColor="#2196F3"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cog_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="77dp"
+                android:layout_marginTop="70dp"
+                android:text="0"
+                android:textColor="#2196F3"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bad_guys"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="locust"
+                android:textAllCaps="true"
+                android:textColor="#D50000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/locust_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="83dp"
+                android:layout_marginTop="70dp"
+                android:text="0"
+                android:textColor="#D50000"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
